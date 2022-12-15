@@ -1,10 +1,10 @@
 import Router from 'koa-router'
+import db from '../db'
 const router = new Router()
 router
+
     .get('/', async(ctx,next) => {
-        ctx.body = [
-            {id:1, title:'romance'},
-            {id:2, title:'Horror'}
-        ]
+        ctx.body = await db('category').select('*').orderBy('id')
     })
+
 export default router
