@@ -1,4 +1,4 @@
-import Book from "../repositories/BookRepository";
+import Book from "../models/Book";
 function BookDetail(props: Book) {
     return (
         <div className="element">
@@ -10,4 +10,3 @@ function BookDetail(props: Book) {
     )
 }
 export default BookDetail;
-
