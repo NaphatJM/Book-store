@@ -20,4 +20,24 @@ export class BookRepository implements IRepository<Book> {
             
         ]
     }
+    async get(): Promise<Book[] | null> {
+        return [
+            {   id: 1, title: 'Interstella', price: 340, stockAmount:3 ,category:{id:3, title:'Sci-fi'} }
+        ]
+    }
+    async create(): Promise<Book[] | null> {
+        return [
+            
+        ]
+    }
+    async update(): Promise<Book[] | null> {
+        return [
+
+        ]
+    }
+    async delete(): Promise<Book[] | null> {
+        return [
+
+        ]
+    }
 }
